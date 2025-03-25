@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colatonic Vanilla Balm - Beard Care Innovation</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #c41e3a;
+            --secondary-color: #f5f5f5;
+            --text-color: #333;
+            --accent-color: #8b4513;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .ingredient-card {
+            background: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ingredient-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .ingredient-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .process-steps {
+            list-style: none;
+            padding: 0;
+        }
+
+        .process-steps li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .process-steps li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .mermaid {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-color);
+            color: white;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Colatonic Vanilla Balm</h1>
+            <p class="subtitle">A Coca-Cola Inspired Beard Care Innovation</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>About</h2>
+            <p>Colatonic Vanilla Balm is a unique beard care product that combines the iconic flavors of Coca-Cola with the nourishing properties of frankincense and vanilla. This innovative formula provides a refreshing and aromatic experience while maintaining your beard's health and appearance.</p>
+        </section>
+
+        <section class="section">
+            <h2>Ingredients</h2>
+            <div class="ingredients-grid">
+                <div class="ingredient-card">
+                    <h3>Frankincense</h3>
+                    <p>Natural resin with anti-inflammatory and antiseptic properties</p>
+                </div>
+                <div class="ingredient-card">
+                    <h3>Vanilla</h3>
+                    <p>Provides a sweet, comforting aroma and natural conditioning</p>
+                </div>
+                <div class="ingredient-card">
+                    <h3>Coca-Cola Essence</h3>
+                    <p>Adds the signature refreshing cola scent</p>
+                </div>
+                <div class="ingredient-card">
+                    <h3>Natural Oils</h3>
+                    <p>Blend of nourishing oils for optimal beard health</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Process Flow</h2>
+            <div class="mermaid">
+                graph TD
+                    A[Start] --> B[Prepare Base Oils]
+                    B --> C[Add Frankincense]
+                    C --> D[Infuse Vanilla]
+                    D --> E[Add Coca-Cola Essence]
+                    E --> F[Quality Check]
+                    F --> G[Package]
+                    G --> H[End]
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Usage Instructions</h2>
+            <ol class="process-steps">
+                <li>Wash and dry your beard thoroughly</li>
+                <li>Take a small amount of balm (about the size of a pea)</li>
+                <li>Rub between your palms to warm the product</li>
+                <li>Apply evenly throughout your beard</li>
+                <li>Style as desired</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>Safety Notes</h2>
+            <div class="warning">
+                <p>⚠️ Important Safety Information:</p>
+                <ul>
+                    <li>For external use only</li>
+                    <li>Keep away from eyes and mucous membranes</li>
+                    <li>Discontinue use if irritation occurs</li>
+                    <li>Store in a cool, dry place</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Colatonic Vanilla Balm. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</body>
+</html> 
